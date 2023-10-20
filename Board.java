@@ -1,4 +1,3 @@
-package Classes;
 // Classe para representar o tabuleiro
 public class Board {
 	private char[][] board;
