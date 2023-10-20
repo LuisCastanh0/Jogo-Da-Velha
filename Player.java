@@ -1,4 +1,3 @@
-package Classes;
 // Classe para representar o jogador
 public class Player {
 	private char symbol;
