@@ -1,4 +1,3 @@
-package Classes;
 import java.util.Random;
 
 public class IAplayer_Random extends Player {
