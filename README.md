@@ -1,6 +1,9 @@
 # Jogo-Da-Velha
 Feito por Luis Castanho.
+
 **Objetivo**
+
+
 Implementar um jogo da velha tradicional em Java onde os jogadores podem competir entre si ou contra uma IA.
 
 **Estrutura**
