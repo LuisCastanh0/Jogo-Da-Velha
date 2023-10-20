@@ -1,9 +1,9 @@
 import java.util.Random;
 
-public class IAplayer_Random extends Player {
+public class RandomPlayer extends Player {
 	private Random random;
 	
-	public IAplayer_Random(char symbol) {
+	public RandomPlayer(char symbol) {
 		super(symbol);
 		random = new Random();
 	}
