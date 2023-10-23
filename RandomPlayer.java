@@ -12,7 +12,7 @@ public class RandomPlayer extends Player {
 		while (true) { 
 			int i = random.nextInt(3);
 			int j = random.nextInt(3);
-			if (board.IsEmpty(i, j)) {
+			if (board.ValidateIJ(i, j)) {
 				board.play(this, i, j);
 				break;
 			}
