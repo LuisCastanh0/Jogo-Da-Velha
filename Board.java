@@ -28,15 +28,22 @@ public class Board {
 	    }
 	}
 	
-	// Verifica se uma posição [i][j] do tabuleiro está vazia
-	public boolean IsEmpty(int i, int j) {
-		if (board[i][j] == ' ') { return true; }
-		else {return false; }
+	// Verifica se uma posição [i][j] do tabuleiro é valida
+	public boolean ValidateIJ(int i, int j) {
+		boolean checkI = (i < 3 && i >= 0);
+		boolean checkJ = (j <3 && j >= 0); 
+		
+		if (checkI && checkJ ) { 
+			if (board[i][j] == ' ') { 
+				return true; }
+		}
+		return false; 
 	}
 	
 	// Realiza a jogada
 	public boolean play(Player player,int i, int j) { 
-		if (IsEmpty(i,j)) {
+
+		if (ValidateIJ(i,j)) {
 			board[i][j] = player.getSymbol();
 			return true;}
 		else {
